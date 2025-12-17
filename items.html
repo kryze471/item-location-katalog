@@ -1,96 +1,94 @@
-/* ===============================
-   ITEM GRID – SAUBERES LAYOUT
-   =============================== */
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Items – 18th Bloc</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-.item-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  margin: 20px 0 40px;
-}
+<body>
+  <div class="container">
+    <h1>Items – Mindestbestand</h1>
+    <p>
+      Übersicht über den Mindestbestand an Items, den ein
+      18th Bloc Member üblicherweise mitführt.
+    </p>
 
-/* ===============================
-   ITEM CARD – EINHEITLICH
-   =============================== */
+    <h2>Pflicht – Mindestbestand</h2>
+    <div class="item-grid">
+      <div class="item-card">
+        <div class="badge">10×</div>
+        <p>Patchkits</p>
+        <p class="muted">(Medkits)</p>
+      </div>
 
-.item-card {
-  background: #151922;
-  border-radius: 16px;
-  padding: 16px;
+      <div class="item-card">
+        <div class="badge">10×</div>
+        <p>Streetkits</p>
+        <p class="muted">(Reparaturkits)</p>
+      </div>
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
+      <div class="item-card">
+        <div class="badge">1×</div>
+        <p>Seil</p>
+      </div>
 
-  text-align: center;
-  min-height: 260px; /* sorgt für gleiche Kartenhöhe */
-}
+      <div class="item-card">
+        <div class="badge">1×</div>
+        <img src="images/pistole.png" alt="Strap (Pistole)">
+        <p>Strap</p>
+        <p class="muted">(Pistole)</p>
+      </div>
 
-/* ===============================
-   BILDER – GLEICHE GRÖSSE
-   =============================== */
+      <div class="item-card">
+        <div class="badge">1×</div>
+        <img src="images/taschenlampe.png" alt="Basi / Taschenlampe">
+        <p>Basi</p>
+        <p class="muted">(oder Taschenlampe)</p>
+      </div>
+    </div>
 
-.item-card img {
-  width: 100%;
-  height: 140px;            /* WICHTIG: feste Höhe */
-  object-fit: contain;      /* Bild bleibt proportional */
-  background: #0f1115;      /* Rahmen für transparente PNGs */
-  border-radius: 12px;
-  padding: 10px;
-  box-sizing: border-box;
-}
+    <h2>Optional – je nach Situation</h2>
+    <div class="item-grid">
+      <div class="item-card">
+        <img src="images/essen.png" alt="Essen">
+        <p>Essen</p>
+      </div>
 
-/* ===============================
-   TEXT
-   =============================== */
+      <div class="item-card">
+        <img src="images/trinken.png" alt="Trinken">
+        <p>Trinken</p>
+      </div>
 
-.item-card p {
-  margin: 0;
-  font-weight: 700;
-  color: #eaeaea;
-}
+      <div class="item-card">
+        <img src="images/baseballschlaeger.png" alt="Baseballschläger">
+        <p>Baseballschläger</p>
+      </div>
 
-.muted {
-  margin: 0;
-  color: #b0b0b0;
-  font-weight: 500;
-}
+      <div class="item-card">
+        <img src="images/50cal.png" alt="50 Cal">
+        <p>50 Cal</p>
+      </div>
 
-/* ===============================
-   MENGEN-BADGE
-   =============================== */
+      <div class="item-card">
+        <img src="images/schwere_pistole.png" alt="Schwere Pistole">
+        <p>Schwere Pistole</p>
+      </div>
+    </div>
 
-.badge {
-  display: inline-block;
-  padding: 6px 12px;
-  border-radius: 999px;
-  background: rgba(255, 105, 180, 0.25);
-  color: #ffd7f2;
-  font-weight: 800;
-}
+    <h2>Ausnahmen</h2>
+    <div class="info-card">
+      <ul class="center-list">
+        <li>Wenn ihr auf Sammelfeldern steht</li>
+        <li>Wenn ihr als Zivilist (Zivi) unterwegs seid</li>
+        <li>Eigene Einschätzung, ob der Basi mitgeführt wird</li>
+      </ul>
+    </div>
 
-/* ===============================
-   AUSNAHMEN-KARTE
-   =============================== */
-
-.info-card {
-  max-width: 720px;
-  margin: 0 auto;
-  background: #151922;
-  border-radius: 16px;
-  padding: 18px;
-}
-
-/* ===============================
-   ZENTRIERTE LISTE
-   =============================== */
-
-.center-list {
-  list-style: disc;
-  margin: 0 auto;
-  padding-left: 22px;
-  max-width: 520px;
-  text-align: left;
-}
-
+    <p style="margin-top:30px;">
+      <a class="button" href="index.html">Zurück</a>
+    </p>
+  </div>
+</body>
+</html>
